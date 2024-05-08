@@ -1,15 +1,15 @@
 {
-  "name": "zotero-addon-template",
-  "version": "1.1.2",
-  "description": "Zotero Addon Template",
+  "name": "xotero",
+  "version": "0.1.2",
+  "description": "Xotero",
   "config": {
-    "addonName": "Zotero Addon Template",
-    "addonID": "addontemplate@euclpts.com",
-    "addonRef": "addontemplate",
-    "addonInstance": "AddonTemplate",
-    "prefsPrefix": "extensions.zotero.addontemplate",
-    "releasePage": "https://github.com/windingwind/zotero-addon-template/releases",
-    "updateJSON": "https://raw.githubusercontent.com/windingwind/zotero-addon-template/main/update.json"
+    "addonName": "Xotero",
+    "addonID": "xotero@xotswarm.com",
+    "addonRef": "xotero",
+    "addonInstance": "Xotero",
+    "prefsPrefix": "extensions.zotero.xotero",
+    "releasePage": "https://github.com/xotswarm/xotero/releases",
+    "updateJSON": "https://raw.githubusercontent.com/xotswarm/xotero/main/update.json"
   },
   "main": "src/index.ts",
   "scripts": {
@@ -19,23 +19,24 @@
     "lint": "prettier --write . && eslint . --ext .ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "release-it --only-version --preReleaseId=beta",
-    "update-deps": "npm update --save"
+    "update-deps": "pnpm update --save"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/windingwind/zotero-addon-template.git"
+    "url": "git+https://github.com/xotswarm/xotero.git"
   },
-  "author": "windingwind",
+  "author": "xotswarm",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/windingwind/zotero-addon-template/issues"
+    "url": "https://github.com/xotswarm/xotero/issues"
   },
-  "homepage": "https://github.com/windingwind/zotero-addon-template#readme",
+  "homepage": "https://github.com/xotswarm/xotero#readme",
   "dependencies": {
     "zotero-plugin-toolkit": "^2.3.30"
   },
   "devDependencies": {
-    "@types/node": "^20.12.8",
+    "@types/bluebird": "^3.5.42",
+    "@types/node": "^20.12.11",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
     "@typescript-eslint/parser": "^7.8.0",
     "chokidar": "^3.6.0",
@@ -128,8 +129,8 @@
       ]
     },
     "hooks": {
-      "before:init": "npm run lint",
-      "after:bump": "npm run build"
+      "before:init": "pnpm run lint",
+      "after:bump": "pnpm run build"
     }
   }
 }

@@ -17,7 +17,7 @@ This is a plugin template for [Zotero](https://www.zotero.org/).
 
 [📜 Zotero Source Code](https://github.com/zotero/zotero)
 
-[📌 Zotero Plugin Template](https://github.com/windingwind/zotero-plugin-template) (This repo)
+[📌 Zotero Plugin Template](https://github.com/windingwind/zotero-plugin-template)
 
 > [!tip]
 > 👁 Watch this repo so that you can be notified whenever there are fixes & updates.
